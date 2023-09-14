@@ -138,3 +138,36 @@ treemap.c:74:8: note: declared here
 cc1: all warnings being treated as errors
 Compilation failed
 ad52f42
+Thu 14 Sep 2023 02:10:37 AM UTC: 
+ treemap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:4:
+treemap.c: In function ‘searchTreeMap’:
+treemap.c:77:33: error: ‘TreeNode’ has no member named ‘key’
+   77 |     if(is_equal(tree,key,current->key)){
+      |                                 ^~
+treemap.c:78:26: error: ‘lower_than’ undeclared (first use in this function)
+   78 |       tree->lower_than = lower_than;
+      |                          ^~~~~~~~~~
+treemap.c:78:26: note: each undeclared identifier is reported only once for each function it appears in
+treemap.c:79:7: error: ‘return’ with no value, in function returning non-void [-Werror=return-type]
+   79 |       return;
+      |       ^~~~~~
+treemap.c:74:8: note: declared here
+   74 | Pair * searchTreeMap(TreeMap * tree, void* key) {
+      |        ^~~~~~~~~~~~~
+treemap.c:82:7: error: ‘return’ with no value, in function returning non-void [-Werror=return-type]
+   82 |       return;
+      |       ^~~~~~
+treemap.c:74:8: note: declared here
+   74 | Pair * searchTreeMap(TreeMap * tree, void* key) {
+      |        ^~~~~~~~~~~~~
+treemap.c:84:7: error: ‘return’ with no value, in function returning non-void [-Werror=return-type]
+   84 |       return;
+      |       ^~~~~~
+treemap.c:74:8: note: declared here
+   74 | Pair * searchTreeMap(TreeMap * tree, void* key) {
+      |        ^~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+030ebaa
