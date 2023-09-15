@@ -154,6 +154,8 @@ Pair * upperBound(TreeMap * tree, void* key) {
     }else if(is_equal(tree,key,current->pair->key)){
       tree->current= current;
       return current->pair;
+    }else{
+      current= current->left;
     }
   }
   return NULL;
