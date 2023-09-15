@@ -169,5 +169,8 @@ Pair * nextTreeMap(TreeMap * tree) {
     }
     return current->pair;
   }
+  while(current->parent!=NULL || current->right==current){
+    current=current->parent;
+  }
   return NULL;
 }
