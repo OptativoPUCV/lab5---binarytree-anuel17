@@ -169,7 +169,7 @@ Pair * nextTreeMap(TreeMap * tree) {
     }
     return current->pair;
   }
-  while(current->parent!=NULL || current->right==current){
+  while(current->parent!=NULL || current->parent->right==current){
     current=current->parent;
   }
   if(current->parent==NULL){
