@@ -499,3 +499,14 @@ treemap.c:110:5: error: ‘chlkd’ undeclared (first use in this function)
       |     ^~~~~
 Compilation failed
 57fe227
+Fri 15 Sep 2023 01:22:24 AM UTC: 
+ treemap.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:4:
+treemap.c: In function ‘removeNode’:
+treemap.c:109:17: error: ‘child’ undeclared (first use in this function)
+  109 |     tree->root= child;
+      |                 ^~~~~
+treemap.c:109:17: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+086bce5
