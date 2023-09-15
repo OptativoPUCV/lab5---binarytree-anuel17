@@ -158,7 +158,7 @@ Pair * upperBound(TreeMap * tree, void* key) {
       current= current->right;
     }
   }
-  if(nodo==NULL){
+  if(nodo!=NULL){
     tree->current=nodo;
     return current->pair;
   }
