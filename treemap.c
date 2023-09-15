@@ -160,7 +160,7 @@ Pair * upperBound(TreeMap * tree, void* key) {
   }
   if(nodo!=NULL){
     tree->current=nodo;
-    return current->pair;
+    return nodo->pair;
   }
   return NULL;
 }
