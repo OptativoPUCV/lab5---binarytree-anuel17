@@ -814,3 +814,28 @@ Fri 15 Sep 2023 02:05:22 AM UTC:
  tests:  25|1
 total_score: 60/70
 9a2e01c
+Fri 15 Sep 2023 02:22:20 AM UTC: 
+ treemap.c | 12 ++++++++++++
+ 1 file changed, 12 insertions(+)
+In file included from test.c:4:
+treemap.c: In function ‘upperBound’:
+treemap.c:148:3: error: unknown type name ‘treeNode’; did you mean ‘TreeNode’?
+  148 |   treeNode* nodo = NULL;
+      |   ^~~~~~~~
+      |   TreeNode
+treemap.c:150:14: error: ‘TreeMap’ has no member named ‘loer_than’; did you mean ‘lower_than’?
+  150 |     if(tree->loer_than(current->key.key)){
+      |              ^~~~~~~~~
+      |              lower_than
+treemap.c:150:31: error: ‘TreeNode’ has no member named ‘key’
+  150 |     if(tree->loer_than(current->key.key)){
+      |                               ^~
+treemap.c:151:12: error: assignment to ‘int *’ from incompatible pointer type ‘TreeNode *’ [-Werror=incompatible-pointer-types]
+  151 |       nodo = current;
+      |            ^
+treemap.c:148:13: error: variable ‘nodo’ set but not used [-Werror=unused-but-set-variable]
+  148 |   treeNode* nodo = NULL;
+      |             ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+7100a0b
