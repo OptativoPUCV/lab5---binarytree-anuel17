@@ -839,3 +839,27 @@ treemap.c:148:13: error: variable ‘nodo’ set but not used [-Werror=unused-bu
 cc1: all warnings being treated as errors
 Compilation failed
 7100a0b
+Fri 15 Sep 2023 02:22:32 AM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘upperBound’:
+treemap.c:148:3: error: unknown type name ‘treeNode’; did you mean ‘TreeNode’?
+  148 |   treeNode* nodo = NULL;
+      |   ^~~~~~~~
+      |   TreeNode
+treemap.c:150:32: error: ‘TreeNode’ has no member named ‘key’
+  150 |     if(tree->lower_than(current->key.key)){
+      |                                ^~
+treemap.c:150:8: error: too few arguments to function ‘tree->lower_than’
+  150 |     if(tree->lower_than(current->key.key)){
+      |        ^~~~
+treemap.c:151:12: error: assignment to ‘int *’ from incompatible pointer type ‘TreeNode *’ [-Werror=incompatible-pointer-types]
+  151 |       nodo = current;
+      |            ^
+treemap.c:148:13: error: variable ‘nodo’ set but not used [-Werror=unused-but-set-variable]
+  148 |   treeNode* nodo = NULL;
+      |             ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+3ba01b7
