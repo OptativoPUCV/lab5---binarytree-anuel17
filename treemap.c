@@ -106,10 +106,10 @@ void removeNode(TreeMap * tree, TreeNode* node) {
     }
     a->parent = node->parent;
   }else{
-    TreeNode* a = minimum(node->right);
-    node->pair->key = a->pair->key;
-    node->pair->value= a->pair->value;
-    removeNode(tree,a);
+    TreeNode* b = minimum(node->right);
+    node->pair->key = b->pair->key;
+    node->pair->value= b->pair->value;
+    removeNode(tree,b);
   }
   
 }
