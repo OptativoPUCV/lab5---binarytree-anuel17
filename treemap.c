@@ -106,7 +106,8 @@ void removeNode(TreeMap * tree, TreeNode* node) {
     }
     child->parent = node->parent;
   }else{
-    
+    tre->root= child;
+    chlkd->parent == NULL;
   }
   
 }
