@@ -397,3 +397,21 @@ Fri 15 Sep 2023 12:24:24 AM UTC:
  tests:  15|4
 total_score: 25/70
 4d699a5
+Fri 15 Sep 2023 12:29:52 AM UTC: 
+ treemap.c | 12 +++++++++++-
+ 1 file changed, 11 insertions(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘removeNode’:
+treemap.c:101:30: error: expected ‘)’ before ‘{’ token
+  101 |       if((node->left == node){
+      |         ~                    ^
+      |                              )
+treemap.c:106:5: error: expected expression before ‘}’ token
+  106 |     }
+      |     ^
+treemap.c:96:15: error: variable ‘a’ set but not used [-Werror=unused-but-set-variable]
+   96 |     TreeNode* a = NULL;
+      |               ^
+cc1: all warnings being treated as errors
+Compilation failed
+699ccdb
