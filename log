@@ -655,3 +655,27 @@ Fri 15 Sep 2023 01:30:38 AM UTC:
  tests:  18|3
 total_score: 40/70
 00a2b91
+Fri 15 Sep 2023 01:41:17 AM UTC: 
+ treemap.c | 2 ++
+ 1 file changed, 2 insertions(+)
+In file included from test.c:4:
+treemap.c: In function ‘firstTreeMap’:
+treemap.c:151:3: error: unknown type name ‘treeNode’; did you mean ‘TreeNode’?
+  151 |   treeNode* current= tree->root
+      |   ^~~~~~~~
+      |   TreeNode
+treemap.c:151:22: error: initialization of ‘int *’ from incompatible pointer type ‘TreeNode *’ [-Werror=incompatible-pointer-types]
+  151 |   treeNode* current= tree->root
+      |                      ^~~~
+treemap.c:153:3: error: expected ‘,’ or ‘;’ before ‘return’
+  153 |   return NULL;
+      |   ^~~~~~
+treemap.c:151:13: error: unused variable ‘current’ [-Werror=unused-variable]
+  151 |   treeNode* current= tree->root
+      |             ^~~~~~~
+treemap.c:154:1: error: control reaches end of non-void function [-Werror=return-type]
+  154 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+a8a0ffe
