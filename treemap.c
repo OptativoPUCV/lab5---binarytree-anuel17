@@ -162,7 +162,7 @@ Pair * firstTreeMap(TreeMap * tree) {
 
 Pair * nextTreeMap(TreeMap * tree) {
   TreeNode* current= tree->current;
-  if(current->right == NULL){
+  if(current->right != NULL){
     current= current->right;
     while(current->right != NULL){
       current= current->left;
