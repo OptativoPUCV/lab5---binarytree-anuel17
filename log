@@ -571,3 +571,28 @@ treemap.c:88:6: note: declared here
 cc1: all warnings being treated as errors
 Compilation failed
 bb1e640
+Fri 15 Sep 2023 01:27:35 AM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+treemap.c: In function ‘removeNode’:
+treemap.c:109:19: error: implicit declaration of function ‘minimun’; did you mean ‘minimum’? [-Werror=implicit-function-declaration]
+  109 |     TreeNode* a = minimun(node->right);
+      |                   ^~~~~~~
+      |                   minimum
+treemap.c:109:19: error: initialization of ‘TreeNode *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+treemap.c:110:9: error: ‘TreeNode’ has no member named ‘key’
+  110 |     node->key = a->key;
+      |         ^~
+treemap.c:110:18: error: ‘TreeNode’ has no member named ‘key’
+  110 |     node->key = a->key;
+      |                  ^~
+treemap.c:111:9: error: ‘TreeNode’ has no member named ‘value’
+  111 |     node->value= a->value;
+      |         ^~
+treemap.c:111:19: error: ‘TreeNode’ has no member named ‘value’
+  111 |     node->value= a->value;
+      |                   ^~
+cc1: all warnings being treated as errors
+Compilation failed
+3215c3f

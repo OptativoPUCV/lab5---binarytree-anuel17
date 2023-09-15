@@ -109,7 +109,7 @@ void removeNode(TreeMap * tree, TreeNode* node) {
     TreeNode* a = minimun(node->right);
     node->key = a->key;
     node->value= a->value;
-    removeNode(a);
+    removeNode(tree,a);
   }
   
 }
