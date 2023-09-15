@@ -155,7 +155,7 @@ Pair * firstTreeMap(TreeMap * tree) {
   }
   if(current!=NULL){
     tree->current;
-    return;
+    return current->pair;
   }
   return NULL;
 }
