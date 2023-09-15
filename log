@@ -643,3 +643,9 @@ treemap.c:107:5: error: ‘child’ undeclared (first use in this function)
 treemap.c:107:5: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 824c031
+Fri 15 Sep 2023 01:30:09 AM UTC: 
+ treemap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  18|3
+total_score: 40/70
+25d9092
