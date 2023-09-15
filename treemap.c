@@ -172,5 +172,10 @@ Pair * nextTreeMap(TreeMap * tree) {
   while(current->parent!=NULL || current->right==current){
     current=current->parent;
   }
+  if(current->parent==NULL){
+    current= current->parent;
+    tree->current= current;
+    return current->pair;
+  }
   return NULL;
 }
