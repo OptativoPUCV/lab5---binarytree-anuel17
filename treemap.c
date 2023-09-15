@@ -154,7 +154,7 @@ Pair * firstTreeMap(TreeMap * tree) {
     
   }
   if(current!=NULL){
-    tree->current;
+    tree->current= current;
     return current->pair;
   }
   return NULL;
