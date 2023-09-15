@@ -153,7 +153,7 @@ Pair * firstTreeMap(TreeMap * tree) {
     current=current->left;
     
   }
-  if(cvurrent!=NULL){
+  if(current!=NULL){
     tree->current;
     return;
   }
